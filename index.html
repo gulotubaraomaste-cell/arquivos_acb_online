@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ACB Online</title>
+</head>
+<body>
+
+    <h1>Anime Card Brawler Online</h1>
+
+    <button id="buscar">Buscar Partida</button>
+
+    <br><br>
+
+    <select id="carta1"></select>
+    <select id="carta2"></select>
+    <select id="carta3"></select>
+
+    <button id="enviarDeck">Enviar Deck</button>
+    <button id="sairPartida">Sair da Partida</button>
+    <button id="rematch">Jogar Novamente</button>
+
+    <h2 id="status">Desconectado</h2>
+
+    <div id="log"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+
+</body>
+</html>
