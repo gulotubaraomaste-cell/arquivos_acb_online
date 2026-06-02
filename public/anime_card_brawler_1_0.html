@@ -10151,7 +10151,7 @@ function init(){
 })();
 
 </script>
-<script defer src="/socket.io/socket.io.js"></script>
+<script defer src="https://arquivos-acb-online.onrender.com/socket.io/socket.io.js"></script>
 <script>
 (function(){
   let onlineSocket = null;
@@ -10161,7 +10161,7 @@ function init(){
 
   function connectOnlineSocket(){
     if(onlineSocket || typeof io !== "function") return;
-    onlineSocket = io();
+    onlineSocket = io("https://arquivos-acb-online.onrender.com");
 
     onlineSocket.on("connect", () => {
       console.log("ACB Online conectado:", onlineSocket.id);
