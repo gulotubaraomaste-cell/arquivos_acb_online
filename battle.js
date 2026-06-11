@@ -336,6 +336,16 @@ const cards = {
                 "ai": 1.8
             },
             {
+                "id": "l_gatling",
+                "name": "Gatling Gun",
+                "kind": "bigAtk",
+                "power": 940,
+                "cooldown": 5,
+                "startCd": 2,
+                "ai": 1.95,
+                "hits": 4
+            },
+            {
                 "id": "l_buff",
                 "name": "Rei dos Piratas!",
                 "kind": "buffAtk",
@@ -2558,6 +2568,336 @@ const cards = {
                 "quote": "Eu sou aquele que ocupa o topo dos clãs, dos sete pecados capitais, o pecado do orgulho do leão, Lord Escanor!"
             }
         ]
+    },
+
+    "tanjiro_hinokami": {
+        "id": "tanjiro_hinokami",
+        "name": "Tanjiro Kamado (Hinokami Kagura)",
+        "rarity": "Lendária",
+        "hp": 6900,
+        "atk": 372,
+        "def": 268,
+        "spd": 138,
+        "skills": [
+            {
+                "id": "hk_dance",
+                "name": "Hinokami Kagura: Dança",
+                "kind": "fire",
+                "power": 760,
+                "cooldown": 1,
+                "ai": 1.35,
+                "burn": {
+                    "chance": 0.3,
+                    "dmg": 115,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "hk_clear_blue",
+                "name": "Hinokami Kagura: Sol Escaldante",
+                "kind": "fire",
+                "power": 1120,
+                "cooldown": 4,
+                "startCd": 2,
+                "ai": 1.85,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 145,
+                    "turns": 3
+                }
+            },
+            {
+                "id": "hk_setting_sun",
+                "name": "Hinokami Kagura: Sol Poente Carmesim",
+                "kind": "bigAtk",
+                "power": 1380,
+                "cooldown": 5,
+                "startCd": 3,
+                "ai": 2.05
+            },
+            {
+                "id": "hk_solar_heat",
+                "name": "Hinokami Kagura: Carrossel Solar",
+                "kind": "bigAtk",
+                "power": 1380,
+                "cooldown": 6,
+                "startCd": 3,
+                "ai": 2.05,
+                "selfEvasion": {
+                    "chance": 1,
+                    "turns": 1
+                }
+            },
+            {
+                "id": "hk_rainbow",
+                "name": "Hinokami Kagura: Arco-Íris Parélio",
+                "kind": "bigAtk",
+                "power": 1650,
+                "cooldown": 7,
+                "startCd": 5,
+                "ai": 2.35,
+                "cinematic": true
+            },
+            {
+                "id": "hk_flame_dance",
+                "name": "Hinokami Kagura: Dança Flamejante",
+                "kind": "fire",
+                "power": 1860,
+                "cooldown": 8,
+                "startCd": 5,
+                "ai": 2.65,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 175,
+                    "turns": 2
+                },
+                "cinematic": true
+            }
+        ]
+    },
+    "nezuko": {
+        "id": "nezuko",
+        "name": "Nezuko Kamado",
+        "rarity": "Épico",
+        "hp": 6400,
+        "atk": 335,
+        "def": 250,
+        "spd": 135,
+        "skills": [
+            {
+                "id": "nz_kick",
+                "name": "Chute Demoníaco",
+                "kind": "atk",
+                "power": 520,
+                "cooldown": 0,
+                "ai": 1.05
+            },
+            {
+                "id": "nz_spin",
+                "name": "Chute Giratório",
+                "kind": "bigAtk",
+                "power": 860,
+                "cooldown": 3,
+                "startCd": 1,
+                "ai": 1.55
+            },
+            {
+                "id": "nz_exploding_blood",
+                "name": "Arte Demoníaca de Sangue: Sangue Explosivo",
+                "kind": "fire",
+                "power": 1220,
+                "cooldown": 4,
+                "startCd": 2,
+                "ai": 2.05,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 145,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "nz_crimson_flowers",
+                "name": "Arte Demoníaca de Sangue: Flores Carmesins",
+                "kind": "fire",
+                "power": 820,
+                "cooldown": 6,
+                "startCd": 4,
+                "ai": 2.15,
+                "targeting": "aoe",
+                "aoeScale": 0.72,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 110,
+                    "turns": 1
+                }
+            },
+            {
+                "id": "nz_crimson_burst",
+                "name": "Arte Demoníaca de Sangue: Explosão Carmesim",
+                "kind": "fire",
+                "power": 1720,
+                "cooldown": 8,
+                "startCd": 6,
+                "ai": 2.55,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 165,
+                    "turns": 3
+                },
+                "cinematic": true
+            }
+        ]
+    },
+    "inosuke": {
+        "id": "inosuke",
+        "name": "Inosuke Hashibira",
+        "rarity": "Incomum",
+        "hp": 5600,
+        "atk": 292,
+        "def": 205,
+        "spd": 145,
+        "skills": [
+            {
+                "id": "ino_first_fang",
+                "name": "Primeira Presa: Perfurar",
+                "kind": "bleedAtk",
+                "power": 430,
+                "cooldown": 0,
+                "ai": 1.05,
+                "bleed": {
+                    "chance": 0.25,
+                    "dmg": 80,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "ino_second_fang",
+                "name": "Segunda Presa: Dilacerar",
+                "kind": "bleedAtk",
+                "power": 780,
+                "cooldown": 3,
+                "startCd": 1,
+                "ai": 1.5,
+                "bleed": {
+                    "chance": 0.25,
+                    "dmg": 90,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "ino_fourth_fang",
+                "name": "Quarta Presa: Retalhar",
+                "kind": "bleedAtk",
+                "power": 1180,
+                "cooldown": 5,
+                "startCd": 3,
+                "ai": 2.05,
+                "hits": 2,
+                "bleed": {
+                    "chance": 1,
+                    "dmg": 125,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "ino_fifth_fang",
+                "name": "Quinta Presa: Corte Insano",
+                "kind": "bleedAtk",
+                "power": 760,
+                "cooldown": 6,
+                "startCd": 3,
+                "ai": 2.1,
+                "targeting": "aoe",
+                "aoeScale": 0.72,
+                "bleed": {
+                    "chance": 1,
+                    "dmg": 105,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "ino_seventh_fang",
+                "name": "Sétima Presa: Consciência Espacial",
+                "kind": "buffAtkSpd",
+                "atkUp": 0,
+                "spdUp": 22,
+                "turns": 2,
+                "cooldown": 5,
+                "ai": 1.25
+            }
+        ]
+    },
+    "rengoku": {
+        "id": "rengoku",
+        "name": "Kyojuro Rengoku",
+        "rarity": "Exclusiva",
+        "hp": 7200,
+        "atk": 405,
+        "def": 300,
+        "spd": 145,
+        "skills": [
+            {
+                "id": "rg_unknowing_fire",
+                "name": "Primeira Forma: Fogo Desconhecido",
+                "kind": "fire",
+                "power": 760,
+                "cooldown": 1,
+                "ai": 1.35,
+                "burn": {
+                    "chance": 0.25,
+                    "dmg": 100,
+                    "turns": 1
+                }
+            },
+            {
+                "id": "rg_rising_sun",
+                "name": "Segunda Forma: Sol Escaldante",
+                "kind": "fire",
+                "power": 1120,
+                "cooldown": 3,
+                "startCd": 1,
+                "ai": 1.9,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 135,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "rg_blooming_flame",
+                "name": "Quarta Forma: Ondulação da Chama Florescente",
+                "kind": "bigAtk",
+                "power": 920,
+                "cooldown": 5,
+                "startCd": 3,
+                "ai": 1.85,
+                "selfBuffAfter": {
+                    "defUp": 75,
+                    "turns": 2
+                }
+            },
+            {
+                "id": "rg_flame_tiger",
+                "name": "Quinta Forma: Tigre Flamejante",
+                "kind": "fire",
+                "power": 1520,
+                "cooldown": 6,
+                "startCd": 4,
+                "ai": 2.35,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 155,
+                    "turns": 3
+                },
+                "cinematic": true
+            },
+            {
+                "id": "rg_blazing_universe",
+                "name": "Terceira Forma: Universo Flamejante",
+                "kind": "bigAtk",
+                "power": 1420,
+                "cooldown": 5,
+                "startCd": 3,
+                "ai": 2.1
+            },
+            {
+                "id": "rg_ninth_form",
+                "name": "Nona Forma: Rengoku",
+                "kind": "fire",
+                "power": 2050,
+                "cooldown": 9,
+                "startCd": 8,
+                "ai": 3,
+                "burn": {
+                    "chance": 1,
+                    "dmg": 190,
+                    "turns": 5
+                },
+                "defDownPct": 0.10,
+                "turns": 2,
+                "cinematic": true
+            }
+        ]
     }
 };
 
@@ -2574,6 +2914,10 @@ const EXCLUSIVE_TEAM_GROUPS = [
     [
         "asta",
         "asta_black"
+    ],
+    [
+        "tanjiro",
+        "tanjiro_hinokami"
     ]
 ];
 
@@ -2604,6 +2948,16 @@ const TEAM_SYNERGIES = [
         members: ["gojo", "geto"],
         atkPct: 0.05,
         defPct: 0.08
+    },
+    {
+        id: "sinergia_irmaos_kamado",
+        name: "Irmãos Kamado",
+        mode: "all",
+        members: ["tanjiro", "tanjiro_hinokami", "nezuko"],
+        alternatives: [["tanjiro", "tanjiro_hinokami"], ["nezuko"]],
+        atkPct: 0.10,
+        defPct: 0.10,
+        turns: 5
     }
 ];
 
@@ -2663,6 +3017,7 @@ function criarCarta(id) {
         usedOnce: {},
         bakugouStacks: 0,
         gearStacks: 0,
+        tanjiroFireStacks: 0,
         skills: clone(base.skills)
     };
 
@@ -2840,7 +3195,13 @@ function possuiMembroSinergia(deckIds, membro) {
 }
 
 function sinergiaAtiva(deckIds, sinergia) {
-    if (!sinergia || !Array.isArray(sinergia.members)) return false;
+    if (!sinergia) return false;
+
+    if (Array.isArray(sinergia.alternatives)) {
+        return sinergia.alternatives.every(grupo => grupo.some(id => deckIds.includes(id)));
+    }
+
+    if (!Array.isArray(sinergia.members)) return false;
 
     if (sinergia.mode === "all") {
         return sinergia.members.every(membro => possuiMembroSinergia(deckIds, membro));
@@ -2867,7 +3228,8 @@ function aplicarSinergiasNoPlayer(player, deckOriginalIds) {
                 source: sinergia.id,
                 name: sinergia.name,
                 atkPct: sinergia.atkPct || 0,
-                defPct: sinergia.defPct || 0
+                defPct: sinergia.defPct || 0,
+                turns: sinergia.turns
             });
             recalcularStats(carta);
         }
@@ -2999,6 +3361,17 @@ function recalcularStats(carta) {
         carta.spd += Math.floor(carta.baseSpd * 0.02 * carta.gearStacks);
     }
 
+    // Tanjiro Hinokami: cada burn aplicado aumenta ATK em 3%, até 5 stacks.
+    if (carta.id === "tanjiro_hinokami" && carta.tanjiroFireStacks) {
+        carta.atk += Math.floor(carta.baseAtk * 0.03 * Math.min(5, carta.tanjiroFireStacks));
+    }
+
+    // Rengoku: abaixo de 50% de HP ganha força e defesa.
+    if (carta.id === "rengoku" && carta.hpMax > 0 && carta.hp > 0 && carta.hp <= Math.floor(carta.hpMax * 0.5)) {
+        carta.atk += Math.floor(carta.baseAtk * 0.20);
+        carta.def += Math.floor(carta.baseDef * 0.20);
+    }
+
     for (const efeito of carta.effects) {
         if (efeito.type === "atkBuff") carta.atk += efeito.amount || 0;
         if (efeito.type === "defBuff") carta.def += efeito.amount || 0;
@@ -3119,6 +3492,13 @@ function processarInicioTurno(carta) {
         carta.gearStacks = Math.min(10, (carta.gearStacks || 0) + 1);
         recalcularStats(carta);
         mensagens.push(carta.name + " acelerou o fluxo do Gear Second (" + carta.gearStacks + "/10).");
+    }
+
+    // Regeneração de Oni da Nezuko.
+    if (carta.id === "nezuko" && carta.hp > 0 && carta.hp < carta.hpMax) {
+        const curaOni = Math.max(1, Math.floor(carta.hpMax * 0.02));
+        carta.hp = Math.min(carta.hpMax, carta.hp + curaOni);
+        mensagens.push(carta.name + " regenerou " + curaOni + " HP.");
     }
 
     const burn = pegarEfeito(carta, "burn");
@@ -3270,10 +3650,33 @@ function aplicarRemoveBuffSeHouver(defensor, skill) {
 function aplicarSelfBuffAfter(atacante, skill) {
     if (!skill.selfBuffAfter) return "";
 
+    const atkUp = skill.selfBuffAfter.atkUp || 0;
+    const defUp = skill.selfBuffAfter.defUp || 0;
+    const turns = skill.selfBuffAfter.turns || 2;
+
+    if (atkUp && defUp) {
+        adicionarEfeito(atacante, {
+            type: "atkDefBuff",
+            atkUp,
+            defUp,
+            turns
+        });
+        return " " + atacante.name + " ganhou ataque e defesa após o ataque.";
+    }
+
+    if (defUp) {
+        adicionarEfeito(atacante, {
+            type: "defBuff",
+            amount: defUp,
+            turns
+        });
+        return " " + atacante.name + " ganhou defesa após o ataque.";
+    }
+
     adicionarEfeito(atacante, {
         type: "atkBuff",
-        amount: skill.selfBuffAfter.atkUp || 0,
-        turns: skill.selfBuffAfter.turns || 2
+        amount: atkUp,
+        turns
     });
 
     return " " + atacante.name + " ganhou força após o ataque.";
@@ -3361,7 +3764,7 @@ function usarSkill(partida, jogador, skillId) {
             mensagem += " Chance de crítico aplicada.";
         }
 
-        if (skill.kind === "fire" && skill.burn && chance(skill.burn.chance)) {
+        if (skill.burn && chance(skill.burn.chance)) {
             adicionarEfeito(defensor, {
                 type: "burn",
                 turns: skill.burn.turns,
@@ -3369,9 +3772,15 @@ function usarSkill(partida, jogador, skillId) {
             });
 
             mensagem += " Queimadura aplicada.";
+
+            if (atacante.id === "tanjiro_hinokami") {
+                atacante.tanjiroFireStacks = Math.min(5, (atacante.tanjiroFireStacks || 0) + 1);
+                recalcularStats(atacante);
+                mensagem += " Dança do Deus do Fogo fortaleceu Tanjiro (" + atacante.tanjiroFireStacks + "/5).";
+            }
         }
 
-        if (skill.kind === "bleedAtk" && skill.bleed && chance(skill.bleed.chance ?? 1)) {
+        if (skill.bleed && chance(skill.bleed.chance ?? 1)) {
             adicionarEfeito(defensor, {
                 type: "bleed",
                 turns: skill.bleed.turns,
@@ -3450,6 +3859,16 @@ function usarSkill(partida, jogador, skillId) {
         });
 
         mensagem = atacanteLabel + " aumentou a esquiva.";
+    }
+
+    if (skill.selfEvasion) {
+        adicionarEfeito(atacante, {
+            type: "evasion",
+            chance: skill.selfEvasion.chance || 1,
+            turns: skill.selfEvasion.turns || 1
+        });
+
+        mensagem += " " + atacante.name + " ficou em esquiva.";
     }
 
     if (skill.kind === "shadowBuff") {
